@@ -9800,6 +9800,18 @@ footer button.btn:hover {
     left: -20px;
   }
 }
+.desinger-active {
+  color: #F9C745;
+  position: relative;
+  transform: translateX(30px);
+}
+.desinger-active::before {
+  content: "-";
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+
 .form-border-top {
   border-top: 6px #F9C745 solid;
 }
