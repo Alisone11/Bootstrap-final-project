@@ -1,0 +1,62 @@
+.card-shadow{
+  box-shadow: 0 .5rem 1rem rgba($black, .15);
+  transition: all 0.5s;
+}
+.card-shadow:hover{
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba($black, .175);
+}
+.adoptText:hover{
+  color: $primary;
+  transition: all 0.5s;
+}
+.adoptImg{
+  height: 351px;
+  transition: all 0.5s;
+}
+@media(min-width:576px){
+  .adoptImg{
+    height: 387px; 
+  }
+}
+@media(min-width:992px){
+  .adoptImg{
+    height: 424px; 
+  }
+}
+.adoptImg01{
+  background-image: url(../imgs/dog01.png);
+  &:hover{
+    background-image: url(../imgs/dog01-hover-1.png)
+  }
+}
+.adoptImg04{
+  background-image: url(../imgs/04.png);
+  &:hover{
+    background-image: url(../imgs/dog01-hover.png)
+  }
+}
+.adoptImg08{
+  background-image: url(../imgs/08.png);
+  &:hover{
+    background-image: url(../imgs/dog01-hover-2.png)
+  }
+}
+.adoptImg06{
+  background-image: url(../imgs/06.png);
+  &:hover{
+    background-image: url(../imgs/dog01-hover-2.png)
+  }
+}
+.adoptImg07{
+  background-image: url(../imgs/07.png);
+  &:hover{
+    background-image: url(../imgs/dog01-hover-2.png)
+  }
+}
+.adoptImg05{
+  background-image: url(../imgs/05.png);
+  &:hover{
+    background-image: url(../imgs/dog01-hover-2.png)
+  }
+}

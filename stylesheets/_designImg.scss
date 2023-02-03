@@ -1,0 +1,82 @@
+@mixin designImg {
+  position: absolute;
+  left: 7%;
+  color: #fff;
+  font-family: kalam;
+}
+@mixin eachImg {
+  font-size: 24px;
+  bottom: 5%;
+  @include designImg
+}
+
+.designImg{
+  height: 166px;
+  position: relative;
+  transition: all 0.5s;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    z-index: 100;
+  }
+  &:hover::before{
+    content:'designer';
+    bottom: 20%;
+    @include designImg
+  }
+}
+@media(min-width:576px){
+  .designImg{
+    height: 238px;
+    &:hover{
+      transform: scale(1);
+    }
+  }
+}
+@media(min-width:992px){
+  .designImg{
+    height: 312px; 
+  }
+}
+.designImg05{
+  background-image: url(../imgs/05.png);
+  &:hover{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(../imgs/05.png);
+  }
+  &:hover::after{
+    content:'Meili';
+    @include eachImg
+  }
+}
+.designImg07{
+  background-image: url(../imgs/07.png);
+  &:hover{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(../imgs/07.png);
+  }
+  &:hover::after{
+    content:'Zoe';
+    @include eachImg
+  }
+}
+.designImg04{
+  background-image: url(../imgs/04.png);
+  &:hover{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(../imgs/04.png);
+  }
+  &:hover::after{
+    content:'Birdy';
+    @include eachImg
+  }
+}
+.designImgMichael{
+  background-image: url(../imgs/Michael.png);
+  &:hover{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(../imgs/Michael.png);
+  }
+  &:hover::after{
+    content:'Machael';
+    @include eachImg
+  }
+}
+
+
